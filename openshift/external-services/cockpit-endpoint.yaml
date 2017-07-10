@@ -1,0 +1,13 @@
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+  name: "external-cockpit-service" 
+subsets: 
+  -
+    addresses:
+      -
+        ip: "100.76.182.23" 
+    ports:
+      -
+        port: 9090 
+        name: "https"

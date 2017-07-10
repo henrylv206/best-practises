@@ -1,0 +1,14 @@
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: "external-cockpit-service"
+spec:
+  ports:
+    -
+      name: "https"
+      protocol: "TCP"
+      port: 9090
+      targetPort: 9090
+      nodePort: 0
+selector: {}
+
